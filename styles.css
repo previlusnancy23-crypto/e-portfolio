@@ -74,9 +74,9 @@ flex {
 
 .row{
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px;
+    margin:  0 auto;
+
 }
 
 .secttion:nth-child(even) {
@@ -96,13 +96,14 @@ flex {
 nav {
     height: 100px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 12px;
+    padding: 0 10px;
 }
+
 
 .nav_link--list {
     display: flex;
@@ -155,9 +156,10 @@ flex-direction: column;
 }
 
 .about-me_picture--mask{
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 200px;
-    border-radius: 1000px;
+    border-radius: 100px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
@@ -176,7 +178,7 @@ flex-direction: column;
 
 }
 .about-me_picture{
-    width: 150%;
+    width: 100%;
 }
 /* improving my own picture */
 .about-me_picture{
@@ -192,7 +194,8 @@ flex-direction: column;
 }
 
 .about-me_info--para {
-font-size: 20px;
+    width: 100%;
+    font-size: 20px;
     margin-bottom: 28px;
 animation: fade-up 800ms 600ms backwards;
 }
@@ -226,7 +229,9 @@ align-items: center;
 
 }
 .about-me_img{
-width: 500px;
+width: 100%;
+max-width: 1200PX;
+object-fit: cover;
 animation: fade-in 120ms 800ms backwards;
 }
 
@@ -433,7 +438,7 @@ color: white
     justify-content: center;
     padding: 8% 0;
     width: 100%;
-    width: 50%;
+    max-width: 285px;
 }
 
 .footer_logo--img {
@@ -445,6 +450,7 @@ color: white
 .foter_copyright,
 .footer_logo--pooper{
 color: rgb(179, 106, 33);
+flex-wrap: wrap;
 }
 
 .footer_logo--pooper{
@@ -474,21 +480,58 @@ color: rgb(179, 106, 33);
 @media (max-width: 768px) {
     nav {
         height: 68px;
+        width: 100%;
+        max-width: 1200px;
+    }
+    .nav_link{
+        width: 100%;
+        max-width: 100%;
     }
 
     h1 {
-font-size: 28px;
+font-size: 15px;
+    }
+
+    .nav_link--list {
+        font-size: 15px;
+    }
+
+    .personal_logo{
+        font-size: 15px;
     }
 
 .about-me_info--para{
-        font-size: 18px;
+        font-size: 20px;
+        width: 250px;
     }
 
     .language{
         width: calc(100% /3);
     }
 
+.section_tittle {
+    font-size: 26px;
 }
+
+    .project_img{
+    margin-left: 100px;
+    width: 60%;
+    }
+    .about-me_img--container{
+        width: 100%;
+        max-width: 1200px;
+        margin-right: 140px;
+    }
+    Footer{
+        width: 100%;
+        max-width: 1200px;
+    }
+    .footer_social--link {
+        width: 100%;
+        max-width: 100%;
+        margin: 3px
+    }
+
 
 .project_description {
 font-size: 14px;
@@ -498,3 +541,5 @@ font-size: 14px;
     left: 20px;
     padding-right: 20px;
 }
+}
+
